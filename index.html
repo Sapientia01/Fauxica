@@ -101,12 +101,16 @@
     </div>
     <script>
       const nav = document.querySelector("nav");
+      const shadow = document.querySelector(".shadow");
       const closeBtn = document.querySelector(".close");
       const opeBtn = document.querySelector(".open");
       opeBtn.addEventListener("click", () => {
         nav.classList.add("active");
       });
       closeBtn.addEventListener("click", () => {
+        nav.classList.remove("active");
+      });
+      shadow.addEventListener("click", () => {
         nav.classList.remove("active");
       });
     </script>
