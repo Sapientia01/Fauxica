@@ -26,7 +26,7 @@ h2 {
 }
 
 .menu {
-  width: 35px;
+  width: 50px;
   display: none;
 }
 .menu li {
@@ -36,16 +36,21 @@ h2 {
   margin-bottom: 5px;
 }
 .menu.close {
+  position: relative;
   margin: 0 30px 0 auto;
-  width: 40px;
+  width: 35px;
 }
 
 .menu.close li.upper {
+  position: absolute;
   transform: rotate(45deg);
+  transform-origin: center;
   margin: 0;
 }
 .menu.close li.lower {
+  position: absolute;
   transform: rotate(-45deg);
+  transform-origin: center;
   margin: 0;
 }
 
